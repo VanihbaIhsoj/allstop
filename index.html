@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>All Stop</title>
+    <script>
+        function getInputValue(){
+            // Selecting the input element and get its value
+            var inputVal = document.getElementById("myInput").value;
+                        var totn_string = 'https://libgen.is/search.php?req=';
+                        var ui = totn_string.concat(inputVal);
+                        window.open(ui,"_self");
+        }
+
+        function getInputValueGoogle(){
+            // Selecting the input element and get its value
+            var inputGoogle = document.getElementById("myInput").value;
+                        var totn_string = 'https://www.google.com/search?q=';
+                        var ui = totn_string.concat(inputGoogle);
+			window.open(ui,"_self");
+        }
+         function getInputValueYts(){
+            // Selecting the input element and get its value
+            var inputYts = document.getElementById("myInput").value;
+                        var totn_string = 'https://yts.mx/browse-movies//';
+                        var ui = totn_string.concat(inputYts);
+                        window.open(ui,"_self");
+        }
+
+         function getInputValueSubtitles(){
+            // Selecting the input element and get its value
+            var inputSubs = document.getElementById("myInput").value;
+                        var totn_string = 'https://subs4me.net/search/';
+                        var ui = totn_string.concat(inputSubs);
+                        window.open(ui,"_self");
+        }
+
+                
+
+    </script>
+
+</head>
+
+<body bgcolor=#00000 fgcolor=#ffffff>
+
+	<h6 style="color:White;"> Powered By: Vanihba Ihsoj</h6>
+	<br><br><br><br>
+
+    <input type="text" placeholder="What are you looking for..." id="myInput"><br><br>
+    <button type="button" onclick="getInputValue();">Search Book</button>
+    <button type="button" onclick="getInputValueGoogle();">Search Google</button>
+    <button type="button" onclick="getInputValueYts();">Search Movies</button>
+    <button type="button" onclick="getInputValueSubtitles();">Search Subtitles</button>
+
+    
+</body>
+</html>
